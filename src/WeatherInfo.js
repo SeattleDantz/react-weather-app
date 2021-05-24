@@ -10,7 +10,8 @@ export default function WeatherInfo(props) {
       <h1>{props.data.city}</h1>
       <ul>
         <li>
-          <ReadableDate date={props.data.date} />
+          <span className="localTimeMessage">(your local time)</span>
+          <ReadableDate date={props.data.date} />{" "}
         </li>
         <li>{props.data.description}</li>
       </ul>

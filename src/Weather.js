@@ -16,14 +16,14 @@ export default function Weather(props) {
       city: response.data.name,
       description: response.data.weather[0].main,
       icon: response.data.weather[0].icon,
-
       ready: true,
       date: new Date(response.data.dt * 1000),
+      coordinates: response.data.coord,
     });
   }
 
   function search() {
-    const apiKey = "551f8c89cdce818fb4f3b6e3fe374a5c";
+    const apiKey = "fad9c0db18a76dfb5d72f7bbcaea335c";
     let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=imperial`;
     axios.get(apiUrl).then(handleResponse);
   }
@@ -61,7 +61,7 @@ export default function Weather(props) {
           </div>
         </form>
         <WeatherInfo data={weatherData} />
-        <WeatherForecast />
+        <WeatherForecast coordinates={weatherData.coordinates} />
       </div>
     );
   } else {
