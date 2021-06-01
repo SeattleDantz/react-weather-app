@@ -1,0 +1,27 @@
+.WeatherInfo {
+  padding: 0 50px 50px 0;
+}
+.WeatherInfo h1 {
+  font-size: 24px;
+  font-weight: 100;
+  line-height: 29px;
+}
+
+.WeatherInfo ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.WeatherInfo .localTimeMessage {
+  font-size: x-small;
+  line-height: 15px;
+}
+
+.WeatherInfo .todaysTemp {
+  padding-top: 25px;
+}
+
+.WeatherInfo .todaysHumWind {
+  padding-top: 65px;
+}
