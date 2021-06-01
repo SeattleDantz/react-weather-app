@@ -58,3 +58,7 @@
   font-size: x-small;
   line-height: 15px;
 }
+
+.Weather .submitButtonColor {
+  background: #e78d40;
+}

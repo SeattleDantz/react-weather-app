@@ -55,7 +55,7 @@ export default function Weather(props) {
               <input
                 type="submit"
                 placeholder="submit"
-                className="btn btn-primary w-100"
+                className="btn btn-primary w-100 submitButtonColor"
               />
             </div>
           </div>
